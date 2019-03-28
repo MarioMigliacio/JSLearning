@@ -66,3 +66,59 @@ switch (true) {
 
 
 
+/******************************
+* Coding tutorial challenge 4: 
+*/
+// Use functions within objects to come back to the BMI calculator.
+
+/*
+var JohnObject = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 78,
+    height: 1.75,
+    calcBMI: function calcBMI() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+var MarkObject = {
+    firstName: 'Mark',
+    lastName: 'Jones',
+    mass: 86,
+    height: 1.82,
+    calcBMI: function calcBMI() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+JohnObject.calcBMI();
+MarkObject.calcBMI();
+console.log(JohnObject, MarkObject);
+
+function CompareBMI(value1, value2) {
+    if (value1.BMI > value2.BMI) {
+        console.log('Higher BMI value: ' + value1.firstName + ' ' + value1.lastName + ' @ ' + value1.BMI + ' kgs.');
+    }
+    else if (value2.BMI > value1.BMI) {
+        console.log('Higher BMI value: ' + value2.firstName + ' ' + value2.lastName + ' @ ' + value2.BMI + ' kgs.');
+    }
+    else if (value1.BMI === value2.BMI) {
+        console.log('ABSOLUTE UNITS!! BOTH HAVE DAT SAME MASS!');
+    }
+}
+
+CompareBMI(JohnObject, MarkObject);
+*/
+
+
+
+
+
+
+
+
+
+
