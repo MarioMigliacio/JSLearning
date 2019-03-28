@@ -63,9 +63,6 @@ switch (true) {
 
 
 
-
-
-
 /******************************
 * Coding tutorial challenge 4: 
 */
@@ -86,8 +83,8 @@ var JohnObject = {
 var MarkObject = {
     firstName: 'Mark',
     lastName: 'Jones',
-    mass: 86,
-    height: 1.82,
+    mass: 78,
+    height: 1.75,
     calcBMI: function calcBMI() {
         this.BMI = this.mass / (this.height * this.height);
         return this.BMI;
@@ -115,10 +112,47 @@ CompareBMI(JohnObject, MarkObject);
 
 
 
+/******************************
+* Coding tutorial challenge 5: 
+*/
+// Revisit the tip tip calculator but use objects, arrays, and LOOPS this time!
+// John tips 20% if the bill is less than 50$. 
+// John tips 15% if the bill is between 50 and 200$.
+// John tips 10% if the bill is greater than 200$.
+/*
+var john = {
+    visits: [124, 48, 268, 180],
+    tipLogic: function (value) {
+        this.tip = 0;
+        
+        switch (true) {
+            case value < 50:
+                this.tip = .2;
+                break;
+            case value >= 50 && value < 200:
+                this.tip = .15;
+                break;
+            case value >= 200:
+                this.tip = .1;
+                break;
+            default: this.tip = 0;
+                break;
+        }
+        
+        return this.tip;
+    },
+    totalSpent: function () {
+        this.sum = 0;
 
+        for (var i = 0; i < this.visits.length; i++) {
+            this.sum += (this.visits[i] + (this.tipLogic(this.visits[i]) * this.visits[i]));
+        }
+        return this.sum;
+    }
+};
 
-
-
-
+console.log(john);
+console.log(john.totalSpent());
+*/
 
 
