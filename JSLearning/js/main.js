@@ -63,6 +63,36 @@ switch (true) {
 
 
 
+/******************************
+* Coding tutorial challenge 3: 
+*/
 
+// spends amounts $124, $48, and $268 on three separate occasions to restaurants.
+// likes to tip 20% if below 50. 15% if between 50 and 200. 10% if above 200.
+// get 2 arrays: one contains the tip amounts he should pay for each restaurant visit.
+// other contains the total amount he paid for each visit.
+/*
+function CalculateTipPercentage(value) {
+    switch (true) {
+        case value < 50:
+            return 0.2;
+        case value >= 50 && value < 200:
+            return 0.15;
+        case value >= 200:
+            return 0.1;
+        default: return 0;
+    }
+}
 
+var restaurantVisits = [124, 48, 268];
+console.log(restaurantVisits);
+
+var tipArray = [CalculateTipPercentage(restaurantVisits[0]) * restaurantVisits[0], CalculateTipPercentage(restaurantVisits[1]) * restaurantVisits[1],
+    CalculateTipPercentage(restaurantVisits[2]) * restaurantVisits[2]];
+
+console.log(tipArray);
+
+var totalArray = [restaurantVisits[0] + tipArray[0], restaurantVisits[1] + tipArray[1], restaurantVisits[2] + tipArray[2]];
+console.log(totalArray);
+*/
 
