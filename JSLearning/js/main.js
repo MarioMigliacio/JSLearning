@@ -96,3 +96,96 @@ var totalArray = [restaurantVisits[0] + tipArray[0], restaurantVisits[1] + tipAr
 console.log(totalArray);
 */
 
+
+
+/******************************
+* Coding tutorial challenge 4: 
+*/
+// Use functions within objects to come back to the BMI calculator.
+
+/*
+var JohnObject = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 78,
+    height: 1.75,
+    calcBMI: function calcBMI() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+var MarkObject = {
+    firstName: 'Mark',
+    lastName: 'Jones',
+    mass: 78,
+    height: 1.75,
+    calcBMI: function calcBMI() {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+JohnObject.calcBMI();
+MarkObject.calcBMI();
+console.log(JohnObject, MarkObject);
+
+function CompareBMI(value1, value2) {
+    if (value1.BMI > value2.BMI) {
+        console.log('Higher BMI value: ' + value1.firstName + ' ' + value1.lastName + ' @ ' + value1.BMI + ' kgs.');
+    }
+    else if (value2.BMI > value1.BMI) {
+        console.log('Higher BMI value: ' + value2.firstName + ' ' + value2.lastName + ' @ ' + value2.BMI + ' kgs.');
+    }
+    else if (value1.BMI === value2.BMI) {
+        console.log('ABSOLUTE UNITS!! BOTH HAVE DAT SAME MASS!');
+    }
+}
+
+CompareBMI(JohnObject, MarkObject);
+*/
+
+
+
+/******************************
+* Coding tutorial challenge 5: 
+*/
+// Revisit the tip tip calculator but use objects, arrays, and LOOPS this time!
+// John tips 20% if the bill is less than 50$. 
+// John tips 15% if the bill is between 50 and 200$.
+// John tips 10% if the bill is greater than 200$.
+/*
+var john = {
+    visits: [124, 48, 268, 180],
+    tipLogic: function (value) {
+        this.tip = 0;
+        
+        switch (true) {
+            case value < 50:
+                this.tip = .2;
+                break;
+            case value >= 50 && value < 200:
+                this.tip = .15;
+                break;
+            case value >= 200:
+                this.tip = .1;
+                break;
+            default: this.tip = 0;
+                break;
+        }
+        
+        return this.tip;
+    },
+    totalSpent: function () {
+        this.sum = 0;
+
+        for (var i = 0; i < this.visits.length; i++) {
+            this.sum += (this.visits[i] + (this.tipLogic(this.visits[i]) * this.visits[i]));
+        }
+        return this.sum;
+    }
+};
+
+console.log(john);
+console.log(john.totalSpent());
+*/
