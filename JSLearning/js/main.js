@@ -189,3 +189,7 @@ var john = {
 console.log(john);
 console.log(john.totalSpent());
 */
+
+
+
+console.log('New section starts now');
