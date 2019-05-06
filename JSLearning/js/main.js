@@ -192,4 +192,33 @@ console.log(john.totalSpent());
 
 
 
-console.log('New section starts now');
+// old way
+//var john = {
+//    name: 'John',
+//    yearOfBirth: 1990,
+//    job: 'developer'
+//};
+
+// function constructor
+var Person = function (name, yearOfBirth, job) {
+    this.name = name;
+    this.yearOfBirth = yearOfBirth;
+    this.job = job;
+    //this.calculateAge = function () {
+    //    console.log(2018 - this.yearOfBirth);
+    //}
+};
+
+Person.prototype.calculateAge = function () {
+    console.log(2018 - this.yearOfBirth);
+};
+
+Person.prototype.lastName = 'Smith';    // kind of dumb in this example. But it is important
+
+// instantiate a new instance of our Person type
+// new firstly creates a blank object. We use the execution scope of the Person function constructor where this refers
+// to the Person itself. So we overwrite our New object with a Person who has values passed by parameter.
+var john = new Person('john', 1989, 'developer');
+console.log(john);
+john.calculateAge();
+console.log(john.lastName);
